@@ -34,6 +34,7 @@ function htmlreplace(a, b, element) {
 
 //htmlreplace('lorem ipsum', 'blah');
 
+// Object of substitutions
 var xkcd = {
     'witnesses': 'these dudes I know',
     'allegedly': 'kinda probably',
@@ -51,8 +52,25 @@ var xkcd = {
     'could not be reached for comment': 'is guilty and everyone knows it'
 };
 
+// Script that does the actual find/replace on page
 for (var key in xkcd) {
     if (xkcd.hasOwnProperty(key)) {
         htmlreplace(key, xkcd[key]);
     }
 }
+
+// Script that populates popup.html
+for (var key in xkcd) {
+    if (xkcd.hasOwnProperty(key)) {
+        document.getElementById('substitute').innerHTML += '<tr><td>' + key + '</td> <td>' + xkcd[key] + '</td> </tr>';
+    }
+}
+
+// Script to undo on this page when button is clicked
+document.getElementById("flip").addEventListener("click", function() {
+    for (var key in xkcd) {
+        if (xkcd.hasOwnProperty(key)) {
+            htmlreplace(xkcd[key], key);
+        }
+    }
+});
