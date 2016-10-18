@@ -1,6 +1,6 @@
 # xkcd-substitution
 Makes the news great again by substituting crappy media words with more fun words! 
-Download this [free Chrome extension from the store.](#)
+Download this [free Chrome extension from the store.](https://chrome.google.com/webstore/detail/kojdglkjmjbedoamlbmiindjkocemmga/)
 
 Based off of xkcd's substitutions comics:
 
