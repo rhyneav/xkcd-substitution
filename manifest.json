@@ -5,13 +5,19 @@
     "short_name": "Make reading the news great again",
     "description": "Replaces words found from XKCD's comic to make reading the news more fun.",
     "version": "1.0",
-
-    "permissions": [
-        "activeTab"
-     ],
-    "background": {
-        "scripts": ["script.js"]
-    },
+    
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            
+            "js": ["script.js"],
+            
+            "run_at": "document_end"
+        }
+    ]
 
     "icons": {
         "16": "icon16.png",
