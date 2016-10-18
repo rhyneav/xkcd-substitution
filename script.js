@@ -32,8 +32,6 @@ function htmlreplace(a, b, element) {
     }
 }
 
-//htmlreplace('lorem ipsum', 'blah');
-
 // Object of substitutions
 var xkcd = {
     'witnesses': 'these dudes I know',
