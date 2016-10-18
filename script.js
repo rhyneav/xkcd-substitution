@@ -58,19 +58,3 @@ for (var key in xkcd) {
         htmlreplace(key, xkcd[key]);
     }
 }
-
-// Script that populates popup.html
-for (var key in xkcd) {
-    if (xkcd.hasOwnProperty(key)) {
-        document.getElementById('substitute').innerHTML += '<tr><td>' + key + '</td> <td>' + xkcd[key] + '</td> </tr>';
-    }
-}
-
-// Script to undo on this page when button is clicked
-document.getElementById("flip").addEventListener("click", function() {
-    for (var key in xkcd) {
-        if (xkcd.hasOwnProperty(key)) {
-            htmlreplace(xkcd[key], key);
-        }
-    }
-});
