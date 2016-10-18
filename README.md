@@ -15,7 +15,7 @@ Based off of xkcd's substitutions comics:
 [Link](https://xkcd.com/1625/)
 
 ### Substitutions 3
-![Substitutions Comic 3](/path/to/img.jpg)
+![Substitutions Comic 3](http://imgs.xkcd.com/comics/substitutions_3.png)
 
 [Link](https://xkcd.com/1679/)
 
